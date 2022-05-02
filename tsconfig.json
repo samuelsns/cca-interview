@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"outDir": "dist",
+		"rootDir": ".",
+		"sourceMap": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"declaration": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noEmitOnError": true,
+		"newLine": "lf",
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "src/**/*.test.ts"]
+}
