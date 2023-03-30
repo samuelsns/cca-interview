@@ -1,6 +1,9 @@
 # HSUSA CCA Developer exercise
 
-This is a boiler plate project that has a basic setup to get started with typescript backend development.
+This is a NodeJS, Typscipt project that includes starter code. 
+ 1. Look for the code structure and suggest improvements
+ 2. Enforce types and interfaces where possible
+ 3. Write tests where you see fit 
 
 To install the dependencies:
 

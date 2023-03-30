@@ -16,9 +16,19 @@ export const productLinesBelongsToSameProductCategory = (
 	);
 };
 
-/**
- *  Implement a method:
- * Given a product offer name (e.g) 'HEAT PUMP SYSTEM'
- * Then it finds the product category (e.g HEAT)
- * Then it returns the product line list (e.g ) ['HB', 'HI']
- */
+const dataStore:any = [];
+
+async function saveData(key:any, value:any, expiration:any) {
+	dataStore.push({ key: value, EX: expiration });
+}
+
+async function getData(key:any) {
+	return new Promise((resolve, reject) => {
+		const result = dataStore[key];
+		if (result) {
+			resolve(result);
+		} else {
+			reject('could not find data');
+		}
+	});
+}
